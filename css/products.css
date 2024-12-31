@@ -1,0 +1,116 @@
+/* general styling*/
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --mainYellow: #fdbe02;
+    --mainWhite: #fff;
+    --mainBlack: #071013;
+    --mainGrey: #9b9999;
+    --TransGrey: rgba(0, 0, 0, 0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Mali", cursive;
+}
+/*end of general style*/
+/* navbar styling*/
+.nav-link{
+    font-size: 25px;
+    color: var(--mainGrey);
+}
+.nav-link:focus{
+    border-bottom: 2px solid var(--mainYellow);
+}
+.navbar-icon{
+    font-size: 25px;
+}
+.navbar-cart-icon{
+       color: var(--mainBlack);
+       position: relative;
+       transition: 0.5s all ease;
+}
+.navbar-cart-icon:hover{
+    color: var(--mainGrey);
+}
+.cart-items{
+    color: var(--mainWhite);
+    width:15px;
+    height: 15px;
+    text-align: center;
+    position: absolute;
+    font-size: 10px;
+    top:-25%;
+    right: 25%;
+    background: var(--mainYellow);
+    border-radius: 50%;
+}
+/*End of navbar styling*/
+
+/*Product banner style*/
+.product-banner{
+    background: url(./productsBcg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 60vh;
+    opacity: 0.7;
+}
+.title-text {
+    font-family: "Calligraffitti" ,cursive;
+    color: var(--mainYellow);
+}
+/* end of Product banner*/
+/* Products Page*/
+.yellow-line{
+    display: inline-block;
+    border-bottom: 3px solid var(--mainYellow);
+    padding-bottom: 5px;
+}
+.categories{
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+.categories:hover{
+    color: var(--mainGrey);
+}
+.item-img{
+    background-color: var(--TransGrey);
+    position: relative;
+    overflow: hidden;
+}
+.search-icon{
+    background: var(--mainWhite);
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    font-size:20px;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.item-img:hover .search-icon{
+    transform: translateX(0%);
+}
+.cart-link{
+    background: var(--mainYellow);
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    transition: all 1s ease-in-out;
+    transform: translateX(100%);
+    cursor: pointer;
+}
+.item-img:hover .cart-link{
+    transform: translateX(0%);
+}
+.dropdown-item:active{
+    background-color: var(--mainYellow);
+}
+
